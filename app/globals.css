@@ -16,7 +16,7 @@
   }
 }
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +24,54 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+
+
+
+
+.codu-anim path {
+  /* fill: black; */
+  stroke: black;
+  stroke-width: 2;
+
+}
+
+
+.codu-anim path:nth-child(1) {
+  stroke-dashoffset: 455px;
+  stroke-dasharray: 455px;
+  animation: lineanim 2s ease forwards;
+  animation-delay: 100ms;
+}
+
+.codu-anim path:nth-child(2) {
+  stroke-dashoffset: 455px;
+  stroke-dasharray: 455px;
+  animation: lineanim 1.5s ease forwards;
+  animation-delay: 500ms;
+
+}
+
+.codu-anim path:nth-child(3) {
+  stroke-dashoffset: 350px;
+  stroke-dasharray: 350px;
+  animation: lineanim 1.25s ease forwards;
+  animation-delay: 750ms;
+
+}
+
+.codu-anim path:nth-child(4) {
+  stroke-dashoffset: 455px;
+  stroke-dasharray: 455px;
+  animation: lineanim 1s ease forwards;
+  animation-delay: 1000ms;
+
+}
+
+
+@keyframes lineanim {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
